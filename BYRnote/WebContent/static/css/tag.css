@@ -1,0 +1,129 @@
+div.tags {
+	line-height: 15px;
+	margin-top: 3px;
+}
+
+div.tags ul.tags {
+	display: inline;
+	margin: 0;
+}
+
+div.tags ul.tags li {
+	background: #fff;
+	border-top: none;
+	box-shadow: none;
+	border: 1px solid #dedede;
+	border-radius: 4px;
+	color: #666;
+	float: left;
+	font-size: 11px;
+	list-style-type: none;
+	margin: 0 5px 2px 0;
+	padding-top: 1px;
+	overflow: hidden;
+	position: relative;
+	padding: 5px 0 0px;
+}
+
+div.tags ul.tags li a {
+	display: inline-block;
+	vertical-align: bottom;
+	padding: 0px 3px 1px 3px;
+	color: #666;
+	text-decoration: none;
+	max-width: 105px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	margin: 0 0 2px 0;
+}
+
+div.tags img.tag-remove{
+	right: 3px;
+	top: 2px;
+	width: 11px;
+	height: 11px;
+	margin: 0px 3px 1px 3px;
+	display: none;
+}
+
+ul.tags li:hover img.tag-remove{
+	display: inline-block;
+}
+
+.edit_tags {
+	background: #fff;
+	margin: 0 2px 2px 0;
+	font-size: 11px;
+	position: relative;
+	border: 1px solid #dedede;
+	border-radius: 4px;
+	padding-top: 0;
+}
+
+.edit_tags_form {
+	padding: 10px 8px;
+	position: absolute;
+}
+
+.balloon {
+	white-space: normal;
+	position: absolute;
+	background: #fff;
+	padding: 8px 12px 8px;
+	width: 200px;
+	z-index: 1000;
+	border: 1px solid #bbb;
+	font-size: 13px;
+	line-height: 15px;
+	vertical-align: baseline;
+	-webkit-border-radius: 6px;
+	border-radius: 6px;
+	-webkit-box-shadow: 0 1px 12px rgba(0,0,0,0.3);
+	box-shadow: 0 1px 12px rgba(0,0,0,0.3);
+}
+
+.edit_tags_form input[type=text] {
+	width: 174px;
+	padding: 7px;
+	margin: 0;
+	font-family: inherit;
+	font-size: 14px;
+	outline: none;
+	color: #333;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-shadow: inset 0 1px 4px #eee;
+}
+
+.edit_tags_form div.submit a {
+	display: inline;
+	text-decoration: underline;
+}
+
+.edit_tags_form div.submit {
+	margin:5px 0 5px 0;
+}
+
+div.tag_body{
+	margin:0px 30px 80px 30px;
+}
+
+.tag_name_title{
+	display: block;
+    border-bottom: 1px solid #DDD;
+    margin-bottom: 10px;
+}
+
+.tag_name_title span{
+	display: none;
+	margin: 10px 0 0 10px;
+}
+
+.tag_name_title:hover span{
+	display: inline-block;
+}
+
+.file_name{
+	width: 800px;
+}

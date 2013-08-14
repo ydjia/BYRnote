@@ -1,0 +1,369 @@
+.operable_item {
+  margin: 0 0 5px 0;
+  position: relative;
+  font-size: 15px;
+}
+
+div.task_operation {
+  display: none;
+  position: absolute;
+  left: -56px;
+  height: 22px;
+  font-size: 12px;
+  font-weight: initial;
+  background: white;
+  text-align: left;
+  vertical-align: baseline;
+  -webkit-box-shadow: -1px 0 1px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: -1px 0 1px rgba(0, 0, 0, 0.2);
+  box-shadow: -1px 0 1px rgba(0, 0, 0, 0.2);
+  padding: 0 0 0 5px;
+  margin: -1px 0 0;
+  min-width: 25px;
+  overflow: auto;
+  -webkit-border-radius: 10px 0px 0px 10px;
+  -moz-border-radius: 10px 0px 0px 10px;
+  border-radius: 10px 0px 0px 10px;
+}
+
+ul.completed_todo {
+  margin-top: 30px;
+  font-size: 12px;
+}
+
+ul.completed_todo .task_item .task_operation,
+li.completed_todo .task_operation{
+  left: -30px;
+}
+
+ul.completed_todo .task_item .wrapper {
+  color: #999;
+}
+
+span.raw {
+  display: inline-block;
+  color: #999;
+}
+
+span.plain_text {
+  display: none;
+}
+
+span.todolist_title {
+  display: none;
+}
+
+header.stand_alone span.plain_text {
+  display: inline-block;
+}
+
+header.stand_alone span.plain_text + a {
+  display: none;
+}
+
+section.stand_alone span.todolist_title {
+  display: inline-block;
+}
+
+section.stand_alone span.todolist_title + a {
+  display: none;
+}
+
+span.raw+a {
+  display: none;
+}
+
+ul.completed_todo li.completed_todo span.raw {
+  display: none;
+}
+
+ul.completed_todo li.completed_todo span.raw+a {
+  display: inline-block;
+}
+
+input.disable_checkbox {
+  margin: 5px 0 0 -18px;
+  float: left;
+  cursor: pointer;
+}
+
+a.assignee {
+  text-decoration: none;
+}
+
+.assignee_date {
+  white-space: normal;
+  position: absolute;
+  top: -30px;
+  background: white;
+  padding: 8px 12px 8px;
+  width: 154px;
+  z-index: 1000;
+  border: 1px solid #BBB;
+  font-size: 13px;
+  line-height: 15px;
+  vertical-align: baseline;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+  -webkit-box-shadow: 0 1px 12px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 1px 12px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 1px 12px rgba(0, 0, 0, 0.3);
+  right: -193px;
+  display: none;
+}
+
+.assignee_date select {
+  display: block;
+  margin: 4px 0px 6px;
+  width: 100%;
+  height: 28px;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+ul.task_group {
+  margin-top: 8px;
+  position: relative;
+  margin: 0 0 10px;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+/* 确保在某个sortable list中无项目的时候有5px空间将元素拖进去 */
+ul.empty {
+  height: 8px;
+}
+
+li.list {
+  margin: 0px 0 10px 0;
+  padding: 0px 0 0px 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  list-style: none;
+}
+
+li.list ul {
+  padding: 0;
+  margin-left: 9px;
+  min-height: 10px;
+  list-style: none;
+}
+
+li.add_task {
+  margin-left: 3px;
+  line-height: 20px;
+  padding-right: 0px;
+  clear: both;
+  word-wrap: break-word;
+  color: #477B96;
+  list-style: none;
+}
+
+li.task_item {
+  padding-left: 22px;
+  line-height: 20px;
+  padding-right: 0px;
+  overflow: visible;
+  word-wrap: break-word;
+  margin-bottom: 5px;
+  list-style: none;
+}
+
+.list a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.list .list_name a,
+.list .list_name span {
+  font-weight: bold;
+}
+
+.list a:hover {
+  color: #477B96;
+  text-decoration: underline;
+}
+
+span.pill>a:hover {
+  color: inherit;
+  text-decoration: none;
+}
+span.pill {
+  font-size: 12px;
+  line-height: 16px;
+  padding: 0 6px;
+  background: #eee;
+  border: 1px solid transparent;
+  color: #666;
+  white-space: nowrap;
+  display: inline-block;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  border-radius: 12px;
+}
+
+span.pill.nobody {
+  background: #fff;
+  border-color: #ddd;
+}
+
+span.pill.open {
+  background: #000;
+}
+
+span.pill.open time,span.pill.open name {
+  color: #fff;
+}
+
+span.pill.nobody name {
+  color: #888;
+}
+
+span.pill.nobody.open name {
+  color: #fff;
+}
+
+.task_item:hover span.pill.nobody {
+  visibility: visible;
+}
+
+.task_item span.pill.nobody {
+  visibility: hidden;
+}
+
+.operable_item:hover .task_operation {
+  display: block;
+}
+
+span.pill.comment_count {
+  background: #e2e9f8;
+  color: #1c5c76 !important;
+}
+
+span.task_info {
+  margin: 1px 0 0 3px;
+  float: left;
+}
+
+.task_item input[type="checkbox"] {
+  margin-left: -20px;
+  margin-right: 2px;
+  vertical-align: baseline;
+  margin-top: 3px;
+  font-size: larger;
+}
+
+p.list_name {
+  padding: 10px 0;
+  border-radius: 5px;
+  color: #3d7489;
+  text-shadow: 0px 1px 1px rgba(255, 255, 255, 0.6);
+}
+
+.task_operator {
+  float: right;
+  opacity: 0.85;
+  -moz-opacity: 0.85;
+  margin: 1px 4px 0 6px;
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  cursor: pointer;
+}
+
+.task_operator:last-child {
+  margin-left: 0;
+}
+
+li.input_task {
+  padding-left: 21px;
+  display: none;
+  margin-bottom: 5px;
+}
+
+.input_tasklist {
+  padding-bottom: 10px;
+}
+
+.input_tasklist button.btn.cancel{
+  margin-left: 4px;
+}
+
+button.btn.cancel{
+  padding: 2px 7px;
+}
+
+p.list_name+.task_operation {
+  left: -58px;
+  top: 11px;
+}
+
+.no_due_date {
+  text-align: center;
+}
+
+.no_due_date a {
+  color: #1c5c76;
+  text-decoration: underline;
+}
+
+ul.completed .task_item {
+  padding-left: 15px;
+  line-height: 17px;
+  margin: 0 0 6px 0px;
+}
+
+ul.completed p.list_name a,ul.completed p.list_name {
+  font-size: 13px;
+  font-weight: normal;
+  color: #999;
+}
+
+ul.completed .task_item:before {
+  content: "\2714";
+  color: #777;
+  margin: 0 5px 0 -21px;
+}
+
+ul.completed .task_item time {
+  color: #999;
+  font-size: 13px;
+}
+
+.arrow {
+  left: -24px;
+  top: 28px;
+  position: absolute;
+  line-height: 0;
+  width: 0;
+  border: 0;
+  border-style: solid;
+  border-width: 12px;
+  border-color: transparent #ccc transparent transparent;
+}
+
+.arrow + .arrow {
+  margin-left: 2px;
+  border-color: transparent #fff transparent transparent;
+}
+
+.wrapper {
+  position: relative;
+  margin-left: -19px;
+  padding-left: 20px;
+}
+
+.sortable_placeholder {
+  background: rgb(240, 241, 244);
+  height: 21px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}

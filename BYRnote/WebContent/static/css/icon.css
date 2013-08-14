@@ -1,0 +1,54 @@
+.icon {
+  background-image: url("../img/icons.png");
+  background-size: 120px 94px;
+}
+
+.icon.darkteamicon {
+  background-position: 0px -22px;
+}
+.icon.darkteamicon:hover {
+  background-position: 0px 0px;
+}
+.icon.darktaskicon {
+  background-position: -24px -22px;
+}
+.icon.darktaskicon:hover {
+  background-position: -24px 0px;
+}
+.icon.darkchaticon {
+  background-position: -48px -22px;
+}
+.icon.darkchaticon:hover {
+  background-position: -48px 0px;
+}
+.icon.darkfoldericon {
+  background-position: -72px -22px;
+}
+.icon.darkfoldericon:hover {
+  background-position: -72px 0px;
+}
+.icon.darkfileicon {
+  background-position: -96px -22px;
+}
+.icon.darkfileicon:hover {
+  background-position: -96px 0px;
+}
+
+.icon.small.darknexticon:hover {
+  background-position: -40px -54px;
+}
+.icon.small.darknexticon {
+  background-position: -40px -74px;
+}
+.icon.small.darkediticon:hover {
+  background-position: -20px -54px;
+}
+.icon.small.darkediticon {
+  background-position: -20px -74px;
+}
+.icon.small.darkdeleteicon:hover {
+  background-position: 0px -54px;
+}
+.icon.small.darkdeleteicon {
+  background-position: 0px -74px;
+}

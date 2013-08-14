@@ -1,0 +1,314 @@
+.document_body {
+  padding: 10px 30px 30px 30px;
+  position: relative;
+  min-height: 345px;
+  box-sizing: border-box;
+}
+
+.document_header {
+  padding: 0px;
+  font-size: 15px;
+}
+
+.home_document .document_header a.index_button,
+.all_document .document_header a.all_button {
+  background-color: #5bbde8;
+  outline: 0;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+  border: 1px solid #5bbde8;
+  font-family: Microsoft YaHei;
+  padding: 0px 5px 2px 5px;
+  text-shadow: none !important;
+  color: #ffffff;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.document_body header {
+  margin: 0;
+  padding: 15px 0;
+}
+
+.document_body>.btn,.document_header>.btn {
+  margin-left: 10px;
+}
+
+.button_mini {
+  color: #000;
+  font-weight: normal;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.9);
+  white-space: nowrap;
+  background-color: #eaeaea;
+  background-image: -moz-linear-gradient(#fafafa, #eaeaea);
+  background-image: -webkit-linear-gradient(#fafafa, #eaeaea);
+  background-image: linear-gradient(#fafafa, #eaeaea);
+  background-repeat: repeat-x;
+  border-radius: 3px;
+  border: 1px solid #ddd;
+  border-bottom-color: #c5c5c5;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  margin-left: 10px;
+}
+
+.button_mini:hover {
+  color: #000;
+}
+
+.button_mini:active {
+  background-color: #dadada;
+  background-image: none;
+  border-color: #b5b5b5;
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.15);
+}
+
+#document_toolbar {
+  margin-left: 1px;
+  margin-bottom: 11px;
+}
+
+#document_toolbar a[data-wysihtml5-command] {
+  padding: 0 14px;
+  font-size: 11px;
+  line-height: 23px;
+  height: 22px;
+  float: left;
+  color: #000000;
+  text-decoration: none;
+  text-align: center;
+  margin-left: -1px;
+  background: #fff;
+  border: 1px solid #cccccc;
+}
+
+#document_toolbar a[data-wysihtml5-command]:first-child {
+  -webkit-border-radius: 3px 0 0 3px;
+  -moz-border-radius: 3px 0 0 3px;
+  border-radius: 3px 0 0 3px;
+}
+
+#document_toolbar a[data-wysihtml5-command]:last-child {
+  -webkit-border-radius: 0 3px 3px 0;
+  -moz-border-radius: 0 3px 3px 0;
+  border-radius: 0 3px 3px 0;
+}
+
+.document_title {
+  border: 0;
+  border-bottom: 1px dashed #cccccc;
+  resize: none;
+  margin: 0;
+  font-size: 17px;
+  font-weight: bold;
+  width: 100%;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  height: 30px;
+}
+
+.document_content {
+  margin-left: 0px;
+  padding-bottom: 30px;
+}
+
+.document_edit_content {
+  margin-left: 0px;
+  width: 98.5%;
+  padding-bottom: 30px;
+}
+
+.button_subgroup {
+  float: left;
+  margin-right: 10px;
+}
+
+.document_edit_title {
+  color: #bbbbbb;
+}
+
+form#documentCommand {
+  padding: 0 10px;
+  /* background-color: #f9f9f9; */
+}
+
+.document_list li {
+  list-style: disc inside none;
+}
+
+[data-wysihtml5-dialog] {
+  padding: 10px;
+  margin-top: 10px;
+  width: 100%;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  border: 1px dashed #cccccc;
+}
+
+[data-wysihtml5-dialog] input[type=text] {
+  resize: none;
+  margin: 10px 0px;
+  line-height: 26px;
+  height: 30px;
+  padding: 2px 4px;
+  display: block;
+  width: 80%;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+[data-wysihtml5-dialog] select {
+  font-size: 12px;
+  padding: 3px;
+  height: 27px;
+}
+
+.document_history_content {
+  margin-left: 2px;
+  padding-bottom: 30px;
+}
+
+.document_history_content .avatar {
+  width: 20px;
+  height: 20px;
+  background-size: 20px 20px;
+}
+
+.history_content {
+  margin-left: 30px;
+}
+
+.updater_name {
+  width: 65px;
+  height: 22px;
+  float: left;
+  overflow: hidden;
+}
+
+.history_info {
+  width: 690px;
+  height: 22px;
+  overflow: hidden;
+  float: left;
+}
+
+input[type=text].history_note {
+  font-size: 14px;
+  resize: none;
+  margin: 0;
+  width: 100%;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  height: 30px;
+  margin-bottom: 10px;
+  font-family: 'Helvetica Neue', 'Hiragino Sans GB', 'Segoe UI',
+    'Microsoft Yahei', 微软雅黑, Tahoma, Arial, STHeiti, sans-serif;
+}
+
+.document_thumbnail {
+  width: 291px;
+  margin: 10px 2% 20px 1px;
+  display: inline-block;
+  vertical-align: top;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.document_thumbnail .document_page {
+  box-sizing: border-box;
+  background: #ffc;
+  padding: 1px;
+  display: block;
+  margin: 0;
+  padding: 0 19px;
+  height: 353px;
+  overflow: hidden;
+  word-wrap: break-word;
+  -webkit-box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+
+.document_thumbnail h4 {
+  font-size: 14px;
+}
+
+.document_thumbnail .document_excerpt {
+  font-size: 11px;
+}
+
+.document_thumbnail div.truncated {
+  width: 100%;
+  height: 21px;
+  top: 0;
+  left: 0;
+  margin: -45px 0 5px;
+  border-bottom: 21px solid #ffc;
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(255, 255, 204, 0)
+    ), to(#ffc) );
+  background-image: -moz-linear-gradient(top, rgba(255, 255, 204, 0), #ffc
+    );
+  background-image: -o-linear-gradient(top, rgba(255, 255, 204, 0), #ffc );
+  background-image: linear-gradient(to bottom, rgba(255, 255, 204, 0),
+    #ffc );
+}
+
+.document_thumbnail footer {
+  font-size: 12px;
+  line-height: 14px;
+  color: #777;
+  text-align: center;
+  position: relative;
+  padding-top: 3px;
+}
+
+.other_versions {
+  position: fixed;
+  width: 185px;
+  max-height: 800px;
+  overflow-y: auto;
+  right: 122px;
+  top: 149px;
+  padding: 7px 20px 9px 20px;
+  box-sizing: border-box;
+  background: #ffffff;
+}
+
+.other_versions li {
+  padding: 5px 3px;
+  list-style: none;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+}
+
+.other_versions li:hover {
+  background-color: #eee;
+  cursor: pointer;
+}
+
+.other_versions li:active {
+  -webkit-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px
+    rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px
+    rgba(0, 0, 0, 0.05);
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px
+    rgba(0, 0, 0, 0.05);
+}
+
+select.select_version {
+  height: 27px;
+  margin-bottom: 3px;
+}
+
+del {
+  background: #ffe6e6;
+  text-decoration: line-through;
+}
+
+ins {
+  background: #e6ffe6;
+  text-decoration: underline;
+}

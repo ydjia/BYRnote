@@ -1,0 +1,228 @@
+.sign-in-up>header {
+  padding: 0 :;9px;
+  margin: 60px 0 30px 0;
+}
+
+.sign-in-up>header>div.logo {
+  width: 181px;
+  height: 81px;
+  margin: 0 0 0 50px;
+  padding: 0;
+}
+
+.container.sign-in-up {
+  width: 300px;
+  margin: 0 auto;
+}
+
+.container.sign-in-up .input-wrapper {
+  margin: 5px auto;
+  height: 52px;
+  background: white;
+  border: 1px solid #CFCFCF;
+  border-radius: 4px;
+}
+
+.container.sign-in-up .input-wrapper.error{
+  background: yellow;
+  height: 32px;
+  margin: 0 0 25px 0;
+}
+.container.sign-in-up .input-wrapper.error  p {
+  height: 32px;
+  line-height: 32px;
+  font-size: 14px;
+}
+.container.sign-in-up .input-wrapper.error span.input-icon {
+  margin: 8px 0 0 15px;
+}
+.container.sign-in-up .input-wrapper#signin-error {
+  background: yellow;
+  height: 32px;
+  margin: 0 0 25px 0;
+}
+
+.container.sign-in-up .input-wrapper#signin-error span.input-icon {
+  margin: 8px 0 0 15px;
+}
+
+.container.sign-in-up .input-wrapper#signin-error  p {
+  height: 32px;
+  line-height: 32px;
+  font-size: 14px;
+}
+
+.container.sign-in-up #signup-error {
+  margin: 5px auto;
+  color: red;
+  background: #f3e1dd;
+  font-size: 12px;
+  border-radius: 4px;
+}
+
+.container.sign-in-up .input-submit {
+  height: 39px;
+  margin-top: 10px;
+}
+
+.container.sign-in-up .input-submit .btn-submit {
+  font-size: 14px;
+  letter-spacing: 10px;
+  cursor: pointer;
+  text-align: center;
+  color: white;
+  line-height: 26px;
+  margin: 0 auto;
+}
+
+.container.sign-in-up .input-wrapper .input-icon {
+  display: block;
+  float: left;
+  width: 16px;
+  height: 16px;
+  margin: 18px 0 0 15px;
+}
+
+.container.sign-in-up .input-wrapper input[type="text"],.container.sign-in-up .input-wrapper input[type="password"]
+{
+  border: 0;
+  outline: none;
+  background: transparent;
+  box-shadow: none;
+  height: 32px;
+  line-height: 32px;
+  font-size: 16px;
+  color: #8F8F8F;
+  margin: 0;
+  padding: 10px;
+  width: 220px;
+}
+
+.container.sign-in-up #input-signup-agree {
+  height: auto;
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+}
+
+.container.sign-in-up #input-signin-password,.container.sign-in-up .signup label#agreement
+  {
+  margin-bottom: 15px;
+}
+
+.container.sign-in-up #signin-help {
+  margin: 5px auto;
+  color: #8D8D8D;
+}
+
+.container.sign-in-up #signin-help a {
+  font-size: 14px;
+  float: left;
+  color: #8D8D8D;
+}
+
+.container.sign-in-up #signin-help a:hover {
+  color: #8D8D8D;
+}
+
+.container.sign-in-up #signin-help label {
+  float: right;
+}
+
+#sign-up-in-switch {
+  position: fixed;
+  top: 30px;
+  right: -3px;
+  margin: 0;
+  padding: 0;
+}
+
+#sign-up-in-switch a {
+  letter-spacing: 10px;
+  font-size: 16px;
+  color: #8F8F8F;
+  padding: 10px 10px 10px 20px;
+  display: block;
+  border: 2px solid #AFAFAF;
+  border-radius: 5px;
+  background: #DFDFDF;
+  text-decoration: none;
+}
+#sign-up-in-switch a:hover{
+  background: #8bd2f1;
+  border: 2px solid #000000;
+}
+
+.container.header {
+  background: transparent;
+  border: 0;
+}
+
+.container.sheet.account {
+  padding: 20px 0;
+  margin-top: 10px;
+}
+
+.container.sheet.account .page-header {
+  padding: 10px 40px;
+  font-size: 20px;
+  line-height: 26px;
+  margin-bottom: 20px;
+}
+
+.container.sheet.account .page-content {
+  padding: 0 40px;
+}
+
+.container.sheet.account .page-content .error {
+  margin-left: 10px;
+  line-height: 18px;
+  font-size: 14px;
+  padding: 10px;
+  border: 1px solid #faf0be;
+  border-radius: 4px;
+  background-color: #faf4c3;
+}
+
+.container.sheet.account .page-content p {
+  font-size: 12px;
+  color: #8f8f8f;
+}
+
+.container.sheet.account .page-content input,.container.sheet.account .page-content textarea
+  {
+  width: 250px;
+  font-size: 14px;
+  line-height: 22px;
+  padding: 10px;
+}
+
+.container.sheet.account .page-content button {
+  margin-top: 10px;
+  padding: 5px 30px;
+}
+
+.container.sheet.account .page-content.update-user input[type=file] {
+  padding: 0 10px;
+}
+
+.container.sheet.account .page-content.update-user input,.container.sheet.account .page-content.update-user textarea
+  {
+  margin-left: 10px;
+}
+
+.container.sheet.account .hint {
+  margin: 10px 40px;
+  color: red;
+}
+
+.resend-invitation input {
+  border: 1px solid #ddd;
+  border-radius: 0;
+  padding: 2px;
+  width: 50%;
+}
+
+.delete-invitation {
+  margin-top: 35px;
+}

@@ -1,0 +1,131 @@
+<%@ page language="java" pageEncoding="UTF-8" %>
+<% request.setCharacterEncoding("utf-8");%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<html>
+<head>
+<%@include file="../common/CommonHTMLHead.jsp"%>
+<title>所有笔记| BYRnote</title>
+<script>
+<% String key = new String (request.getParameter("key").getBytes("ISO-8859-1"),"utf-8");%>
+
+function viewNote(id, name, title, text)
+{
+	view_note.id.value = id;
+	view_note.name.value = name;
+	view_note.title.value = title;
+	view_note.text.value = text;
+	view_note.submit();
+}
+function deleteNote(id) 
+{
+	if(confirm("是否真的要删除该笔记？")==false)
+		return;
+	delete_note.id.value = id;
+	delete_note.submit();
+}
+function updateNote(id, name, title, text)
+{	
+	updateNoteForm.id.value = id;
+	updateNoteForm.name.value = name;
+	updateNoteForm.title.value = title;
+	updateNoteForm.text.value = text;
+	updateNoteForm.submit();
+}
+function imgLoad(img,index)
+{
+
+	if(img.clientWidth / img.clientHeight > 3/4)
+	{
+	    img.height = img.clientHeight * 110 / img.clientWidth;
+	    img.width = 110;
+	  
+	}  
+	else
+	{
+	    img.width = img.clientWidth * 160 / img.clientHeight;
+	    img.height = 160;
+	} 
+} 
+</script>
+</head>
+<form name="delete_note" action="deleteNote" method="post" >
+    <input type="hidden" name = "id"/>
+</form> 
+<form name="view_note" action="viewNote" method="post" >
+    <input type="hidden" name = "id"/>
+    <input type="hidden" name = "name"/>
+    <input type="hidden" name = "text"/> 
+	<input type="hidden" name = "title">
+</form> 
+<form name="updateNoteForm" action="./update_note.jsp" method="post" >
+    <input type="hidden" name = "id"/>
+    <input type="hidden" name = "name"/>
+    <input type="hidden" name = "text"/> 
+	<input type="hidden" name = "title">
+</form> 
+<body class="projects">
+	<header>
+	  <nav class="container">
+		<a class="logo" href="./home.jsp" title="回到首页">BYR云笔记</a>
+		<div class="wel">
+		  <!--<a href="/1234276/users/793390">Me</a> -->
+			<p>${user}，欢迎您使用BYR云笔记</p>  
+		</div>
+		<div class="current-user">
+		  <a href="./account.jsp">账户设置</a>
+		  <a href="#">使用说明</a>
+		  <a href="./index.html">退出</a>
+		</div>
+		<div class="nav-search">
+		  <form id="search" style="margin:0;" method="post"  action="./search.jsp">
+			<input type="text" name="key" placeholder="搜索..." />
+		  </form>
+		</div>
+	  </nav>
+	</header>
+<div class="content">
+    <div class="container">
+	 <div class="container sheet">
+	<header class="search_header">
+		 <div class="sheet clearfix inactive">
+			<h4>搜索“<mark><%=key%></mark>”的结果</h4>
+		</div>
+	</header>
+		<section class="search_body">
+		<c:import url="search"/>
+		<c:forEach var="note" items="${notes}" varStatus = "status">
+			<div class="project_card">
+			 <div class="project_operation">
+				<div class="icon small darkediticon" title="编辑"><a href="javascript:updateNote('${note.id}','${note.name}','${note.title}','${note.text}')"></a></div>
+				 <div class="icon small darkdeleteicon" title="删除"><a href="javascript:deleteNote('${note.id}')"></div> 
+			  </div>
+			  
+			  <div class="project_label bgcolor${status.index%8+1} opaque">
+				  <p>
+					<a class="limit_width_project_name" href="javascript:viewNote('${note.id}','${note.name}','${note.title}','${note.text}')" title="${note.title}">
+					${note.title}
+					</a>
+				  </p>
+			  </div>
+			  <c:if test="${note.name == null}">
+			  <div class="project_description">${note.text}</div>
+			  </c:if>
+			  <c:if test="${note.name != null}">
+			  <div class="pic">
+				  <a href="../../BYRnote2/viewPhoto?userName=${user}&id=${note.id}" target="_blank">
+						<c:url value="viewPhoto?userName=${user}&id=${note.id}" var="viewPhoto" />            
+						<img id="img${status.index}" onload="imgLoad(this, ${status.index})" src="../../BYRnote2/${viewPhoto}" />
+					</a>
+				</div>
+			  <div class="project_description_with_pic">${note.text}</div>
+			  </c:if>
+			</div>
+		</c:forEach>
+		</section>
+	 </div>
+    </div>
+</div>
+ <a href="javascript:window.scroll(0);" style="position: fixed; right: 30px; bottom: 30px; background: lightblue; padding: 20px; border-radius: 5px;">
+</a>
+
+</body>
